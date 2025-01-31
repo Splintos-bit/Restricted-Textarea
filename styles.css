@@ -1,0 +1,60 @@
+/* Apply Flexbox to center content */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style the container */
+.container {
+    text-align: center;
+}
+
+/* Wrapper to hold the textarea and the counter */
+.textarea-wrapper {
+    position: relative; /* Makes the position of the counter relative to this container */
+}
+
+/* Style the textarea */
+textarea {
+    width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    resize: none;
+    outline: none; /* Removes default outline */
+}
+
+/* Styles for the error (red border) */
+textarea.error {
+    border: 2px solid red; /* Red border when error */
+    color: red; /* Red text */
+    outline: none; /* Ensure no outline when error */
+}
+
+/* Styles for the noerror (black border) */
+textarea.noerror {
+    border: 2px solid black; /* Black border when no error */
+    color: black; /* Black text */
+    outline: none; /* Ensure no outline when no error */
+}
+
+/* Positioning the character counter at the bottom-right inside the textarea */
+#charCount {
+    position: absolute;
+    bottom: 5px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    font-size: 14px;
+    color: inherit; /* Inherit color from the textarea (black or red) */
+}
+
+/* Character count style */
+#charCount {
+    margin-top: 10px;
+    font-size: 14px;
+}
